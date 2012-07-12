@@ -1,0 +1,26 @@
+webless
+
+
+webless is userscript that you have web browser scroll like less
+
+
+j:
+  scroll down a little
+
+k:
+  scroll up a little
+
+gg:
+  scroll to top of page
+
+G:
+  scroll to bottom of page
+
+control + f:
+  scroll down by one page
+
+control + b:
+  scroll up by one page
+
+ESC:
+  switch enable or unenable this script
