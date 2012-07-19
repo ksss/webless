@@ -23,7 +23,9 @@ function keyString (e) {
 	} else {
 		ret += {
 			27: 'ESC',
-			219: '['
+			219: '[',
+			221: ']',
+			222: '"',
 		}[code]
 	}
 	return ret;
@@ -35,7 +37,6 @@ document.body.addEventListener('keydown', function (e) {
 	var toggle = {
 		'ESC': function () {
 			on = !on;
-			return;
 		},
 		'C-[': function () {
 			toggle['ESC']();
