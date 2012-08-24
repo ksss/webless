@@ -77,6 +77,6 @@ document.body.addEventListener('keydown', function (e) {
 		handler = config[key];
 		handler && handler();
 	}
-});
+}, false);
 
 })();
