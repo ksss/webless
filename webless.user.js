@@ -5,30 +5,30 @@
 // @include     http://*
 // @include     https://*
 // @author      ksss
-// @version     0.3
+// @version     0.4
 // ==/UserScript==
 // lessっぽくブラウジングしたいscript
 
 (function () {
 
 function keyString (e) {
-	var ret = '';
+	var key_string = '';
 	var code = e.which || e.keyCode;
 	var string = String.fromCharCode(code);
 
-	if (e.ctrlKey) ret += 'C-';
+	if (e.ctrlKey) key_string += 'C-';
 
 	if (/\w/.test(string)) {
-		ret += string[e.shiftKey ? 'toUpperCase' : 'toLowerCase']();
+		key_string += string[e.shiftKey ? 'toUpperCase' : 'toLowerCase']();
 	} else {
-		ret += {
+		key_string += {
 			27: 'ESC',
 			219: '[',
 			221: ']',
 			222: '"',
 		}[code]
 	}
-	return ret;
+	return key_string;
 };
 
 var on = true;
@@ -55,16 +55,16 @@ document.body.addEventListener('keydown', function (e) {
 		'G': function () {
 			document.body.scrollTop = document.body.scrollHeight;
 		},
-		'C-d': function () {
+		'd': function () {
 			document.body.scrollTop += window.innerHeight / 2;
 		},
-		'C-u': function () {
+		'u': function () {
 			document.body.scrollTop -= window.innerHeight / 2;
 		},
-		'C-f': function () {
+		'f': function () {
 			document.body.scrollTop += window.innerHeight;
 		},
-		'C-b': function () {
+		'b': function () {
 			document.body.scrollTop -= window.innerHeight;
 		}
 	};
