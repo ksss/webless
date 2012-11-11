@@ -8,9 +8,9 @@ Usage:
   k: scroll up a little
   g: scroll to top of page
   G: scroll to bottom of page
-  control + d: scroll down by half page
-  control + u: scroll up by half page
-  control + f: scroll down by one page
-  control + b: scroll up by one page
+  d: scroll down by half page
+  u: scroll up by half page
+  f: scroll down by one page
+  b: scroll up by one page
   ESC: switch enable or unenable this script
   control + [: same ESC
