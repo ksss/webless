@@ -4,13 +4,13 @@ webless
 webless is userscript that you have web browser scroll like less
 
 Usage:
-  j: scroll down a little
-  k: scroll up a little
-  g: scroll to top of page
-  G: scroll to bottom of page
-  d: scroll down by half page
-  u: scroll up by half page
-  f: scroll down by one page
-  b: scroll up by one page
+  Ctrl-j: scroll down a little
+  Ctrl-k: scroll up a little
+  Ctrl-g: scroll to top of page
+  Ctrl-G: scroll to bottom of page
+  Ctrl-d: scroll down by half page
+  Ctrl-u: scroll up by half page
+  Ctrl-f: scroll down by one page
+  Ctrl-b: scroll up by one page
   ESC: switch enable or unenable this script
   control + [: same ESC
