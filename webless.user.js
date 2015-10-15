@@ -11,6 +11,10 @@
 
 (function () {
 
+if (!document.body) {
+	return;
+}
+
 function keyString (e) {
 	var key_string = '';
 	var code = e.which || e.keyCode;
@@ -66,6 +70,7 @@ var config = {
 		document.body.scrollTop -= window.innerHeight;
 	}
 };
+
 document.body.addEventListener('keydown', function (e) {
 	var count = 0;
 	var key = keyString(e);
@@ -78,5 +83,6 @@ document.body.addEventListener('keydown', function (e) {
 		handler && handler();
 	}
 }, false);
+
 
 })();
